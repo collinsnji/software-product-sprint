@@ -16,7 +16,8 @@
  * Adds a random greeting to the page.
  */
 function addRandomGreeting() {
-  const greetings = ['Hello!', 'مرحبا', 'Bonjour!', 'Nah How?'];
+  const greetings =
+      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -25,4 +26,3 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
-const interval = setInterval(addRandomGreeting, 2500);

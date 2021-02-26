@@ -1,6 +1,6 @@
 # Google Software Product Sprint
 
-This repo contains `collinsnji`'s portfolio and SPS projects.
+This repo contains the projects you'll work on throughout SPS.
 
 To get started:
 
