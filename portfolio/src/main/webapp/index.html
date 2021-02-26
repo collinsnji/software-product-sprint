@@ -1,19 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
+    <title>Collin Grimm | Portfolio</title>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Collins Nji" />
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+</head>
+
+<body id="content">
+    <div class="container">
+        <div class="intro-container">
+            <div class="intro-text">
+                <h1>
+                    <span id="greeting-container">Hello</span>
+                    <span class="emoji">👋</span><br />
+                    My name is Collin</h1>
+                <h2>I'm a sophomore at Mount St. Mary's University ⛰</h2>
+            </div>
+            <div class="profile-image-container">
+                <img class="profile-image" src="images/profile.png" />
+            </div>
+        </div>
+        <div class="quick-links">
+            <a href="//linkedin.com/in/collingrimm">linkedin</a>
+            <a href="mailto:collins.geek@gmail.com">email</a>
+            <a href="//github.com/collinsnji">github</a>
+            <a href="//twitter.com/@grimmcollin">twitter</a>
+            <a href="//medium.com/@collin.grimm">blog</a>
+        </div>
+
+        <!-- section for bio -->
+        <div class="bio">
+            <div class="bio-text">
+                <h3 class="section-heading">Summary</h3>
+                <p>
+                    Collins Nji, who goes by the online alias "Collin Grimm," is a sophomore currently
+                    pursuing a
+                    BSc in Computer Science with a double minor in Data Science and English Language at Mount St. Mary's
+                    University in Maryland. Last summer, Collin interned as a Data Research Analyst at the Georgetown
+                    University
+                    <a href="//cset.georgetown.edu/" target="_blank">Center for Security and Emerging Technology.</a>
+                </p>
+            </div>
+            <div class="bio-text">
+                <h3 class="section-heading">Background</h3>
+                <p>
+                    I was born and raised in <a href="https://en.wikipedia.org/wiki/Cameroon" target="_blank">Cameroon
+                        🇨🇲</a>&mdash; a country in Cenntral Africa. I moved to the USA to continue my college
+                    education. I have four sisters, and unfortunately no brother. Cameroon is a bilingual country and
+                    the two official languages are English and French. I grew up sepaking both, but I also learned
+                    Arabic and Pidgin English (creole based English spoken in West Africa and Hawaii). Hence, I speak
+                    four languages in total, and I am currently learning German!
+                </p>
+            </div>
+            <div class="bio-text">
+                <h3 class="section-heading">Hobbies</h3>
+                <p>
+                    In my free time, I like to paint and draw. My drawings mostly depict abstact art scenes. I love
+                    charcoal and graphite and I primarily use that media for my drawings. People often say charcoal is
+                    messy, but I think if carefully used, it produces the most beautiful images.
+                </p>
+                <div class="art-preview">
+                    <img class="art-piece" alt="hand reaching" src="images/collin-grimm-art.jpeg">
+                    <img class="art-piece" alt="darwin watterson" src="images/darwin.jpeg">
+                    <img class="art-piece" alt="fallen angel" src="images/fallen.angel.jpg">
+                </div>
+            </div>
+            <div class="bio-text">
+                <h3 class="section-heading">Projects</h3>
+                <ul class="project-list">
+                    <li class="project-list-item">
+                        <h4 class="project-list-item-title"><a
+                                href="https://github.com/georgetown-cset/weak-labeling-experiments">Snorkel for Data
+                                Labeling</a></h4>
+                        <p>This project attempts to use Snorkel to
+                            create weak labels for large amounts of training data at Georgetown CSET using weak
+                            supervision. The
+                            data is primarily paper abstracts, whose relevance to various WIPO Application Areas we
+                            explore. This was my summer project at my last internship where I used weak supervision to
+                            label about 4GB worth of paper abstracts by writing weak supervison models based on Snorkel
+                        </p>
+                    </li>
+                    <li class="project-list-item">
+                        <h4 class="project-list-item-title"><a
+                                href="https://github.com/jsonkao/alfred-prufrock-editor">Free Write (Alfred Prufrock
+                                Editior)</a></h4>
+                        <p>This project uses Google's NLP APIs to create a mind map of someone's thought process, and
+                            builds a dynamic minndmap that shows both sentiment of thoughts and relationship to other
+                            parts of text as the user writes in an editor. This project was inspired by Alfred
+                            Prufrock's works in literature. This project uses Node.js for the backend, D3.js for the
+                            mind map visualization and JS for the front end.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
