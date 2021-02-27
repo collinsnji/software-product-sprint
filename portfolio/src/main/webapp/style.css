@@ -1,9 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700");
+html {
+  padding: 0px;
+  margin: 0px;
+}
 #content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono", monospace, sans-serif;
+  font-size: 16px;
+  color: #28313d;
+  background: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-#greeting-container {
-  margin-top: 20px;
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  color: #28313d;
+  text-decoration: underline;
+}
+.container {
+  max-width: 650px;
+  padding: 5px;
+  margin: 50px auto;
+}
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-image-container {
+  width: 150px;
+  height: 150px;
+  padding: 0px;
+  margin: 0px;
+}
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.intro-text {
+    max-width: 75%;
+}
+.intro-text h1 {
+  margin: 0;
+}
+.intro-text h2 {
+  margin: 0 0 0.5em 0;
+  color: #a2b0c2;
+}
+.section-heading {
+    color: #486781;
+}
+.art-preview {
+    display: flex;
+    justify-content: space-between;
+}
+.art-piece {
+    width: 200px;
+    height: 256px;
 }
