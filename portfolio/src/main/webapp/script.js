@@ -25,4 +25,6 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+// Change the random greeting every 2.5 seconds
 const interval = setInterval(addRandomGreeting, 2500);
