@@ -10,5 +10,5 @@ const addQuotesToPage = async () => {
     quoteContainer.innerHTML = responseText;
 }
 
-// Execute the fetch once the DOM content is loaded and parse
+// Execute the fetch once the DOM content is loaded and parsed
 document.addEventListener("DOMContentLoaded", addQuotesToPage);
