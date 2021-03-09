@@ -17,5 +17,5 @@ async function addQuotesToPage() {
   quoteContainer.innerHTML = `"${quoteText}" - ${quoteAuthor}`;
 };
 
-// Execute the fetch once the DOM content is loaded and parse
-document.addEventListener('DOMContentLoaded', addQuotesToPage);
+// Execute the fetch once the DOM content is loaded and parsed
+document.addEventListener("DOMContentLoaded", addQuotesToPage);
