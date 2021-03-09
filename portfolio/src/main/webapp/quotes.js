@@ -6,11 +6,8 @@ async function addQuotesToPage() {
   const responseJson = await serverResponse.json();
 
   // Get a random quote from the json quotes
-  const quote =
-      responseJson
-          .quotes[Math.floor(Math.random() * responseJson.quotes.length)];
-  const quoteAuthor = quote.authorName;
-  const quoteText = quote.quoteText;
+  const quoteAuthor = responseJson.authorName;
+  const quoteText = responseJson.quoteText;
 
   // Get the quote container and add the quote into it
   const quoteContainer = document.querySelector('.quote-container');
@@ -18,4 +15,4 @@ async function addQuotesToPage() {
 };
 
 // Execute the fetch once the DOM content is loaded and parsed
-document.addEventListener("DOMContentLoaded", addQuotesToPage);
+document.addEventListener('DOMContentLoaded', addQuotesToPage);
