@@ -1,7 +1,7 @@
 package com.google.sps.quote;
 
 /**
- * A quote consist of the author and quote text
+ * Class that stores information about a Quote including author and text
  */
 public final class Quote {
   private final String authorName;

@@ -27,7 +27,7 @@ public class QuoteGenerator extends HttpServlet {
   }
 
   /**
-   * Build the quotes using the author name and quote text.
+   * Builds a quote using the author name and quote text.
    *
    * @param authorName Name of the quote author
    * @param quoteText  The quote text
@@ -39,12 +39,11 @@ public class QuoteGenerator extends HttpServlet {
   }
 
   /**
-   * Return one random quote from an ArrayList of quotes
+   * Returns one random quote from a list of quotes
    *
    * @return a random quote
    */
   private Quote getRandomQuote() {
-    // Add all to the quotes ArrayList
     final ArrayList<Quote> quotes = new ArrayList<>();
     quotes.add(buildQuote("Toni Morrision", "Correct what you can; learn from what you can\'t."));
     quotes.add(buildQuote("Joan Didion", "Life changes fast. Life changes in the in the instant."));
