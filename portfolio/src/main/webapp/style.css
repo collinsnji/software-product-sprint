@@ -82,3 +82,46 @@ a {
   height: 256px;
   width: 200px;
 }
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-input-label {
+  border: 2px solid #28313d;
+  border-radius: 4px;
+  margin: 0;
+  margin-bottom: 1rem;  
+  padding-top: 0px;
+}
+
+.comment-input-label:focus-within:invalid {
+  border: 2px solid #f06292;
+}
+
+.comment-input {
+  border: none;
+  font-size: 1rem;
+  height: 100%;
+  outline: none;
+  padding: 8px;
+  resize: vertical;
+  width: -webkit-fill-available;
+  width: fill-available;
+}
+
+.comment-submission-btn {
+  background-color: #fff;
+  border: 2px solid #607d8b;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 48px;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+}
+
+.comment-submission-btn:hover {
+  background-color: rgb(96, 125, 139, 0.2);
+}

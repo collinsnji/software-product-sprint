@@ -103,10 +103,29 @@
                 <h3 class="section-heading">Favourite Quotes</h3>
                 <p class="quote-container"></p>
             </div>
+            <div class="bio-text">
+                <h3 class="section-heading">Endorsements & Comments</h3>
+                <div class="comments-container"></div>
+            </div>
+            <div class="bio-text">
+                <h3 class="section-heading">Leave an Endorsement or Comment</h3>
+                <form class="comment-form" action="/new-comment" method="POST">
+                    <fieldset class="comment-input-label">
+                        <legend>Name</legend>
+                        <input class="comment-input" type="text" id="commentAuthor" name="author" placeholder="Please enter your name" maxlength="32" required="required">
+                    </fieldset>
+                    <fieldset class="comment-input-label">
+                        <legend>Comment</legend>
+                        <textarea class="comment-input" name="comment" placeholder="Leave a comment or review" required="required"></textarea>
+                    </fieldset>
+                    <button class="comment-submission-btn">Submit</button>
+                </form>
+            </div>            
         </div>
     </div>
     <script src="script.js"></script>
     <script src="quotes.js"></script>
+    <script src="comments.js"></script>
 </body>
 
 </html>
